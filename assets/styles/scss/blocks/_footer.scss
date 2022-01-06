@@ -1,0 +1,60 @@
+/* Footer styles start */
+
+.footer {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 15.2% 1fr 15.2%;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+        "ft__number ft__logo ft__socials"
+        "ft__mail ft__logo ."
+        "ft__copy ft__logo ft__conf";
+    align-items: center;
+    height: 225px;
+    margin-top: 100px;
+    padding: 0px 5.2% 0px 5.2%;
+    background-color: #545A2F;
+    color: white;
+}
+
+.footer__number {
+    grid-area: ft__number;
+    align-self: end;
+}
+
+.footer__mail {
+    grid-area: ft__mail;
+    align-self: start;
+}
+
+.footer__mail a {
+    color: white;
+}
+
+.footer__copy {
+    grid-area: ft__copy;
+    align-self: end;
+}
+
+.footer__logo {
+    grid-area: ft__logo;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.footer__socials {
+    grid-area: ft__socials;
+    justify-self: end;
+    width: 41.25px;
+}
+
+.footer__conf {
+    grid-area: ft__conf;
+    align-self: end;
+    justify-self: end;
+    font-size: 12px;
+    line-height: 21px;
+}
+
+/* Footer styles end */

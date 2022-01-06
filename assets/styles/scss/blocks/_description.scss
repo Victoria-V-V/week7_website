@@ -1,0 +1,57 @@
+/* Main styles start */
+/* Section Description styles start */
+
+.description {
+    box-sizing: border-box;
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 1fr 43.15%;
+    grid-template-areas:
+        "desc-text desc-text desc-text"
+        "desc__img1 desc__img2 desc__img3";
+    justify-content: space-evenly;
+    height: 1250px;
+    max-height: 100vh;
+
+    background-image: url(/assets/images/desc_bg_left.jpg), url(/assets/images/desc_bg_right.svg);
+    background-position: top 12% left 0%, top 12% right 0%;
+    background-repeat: no-repeat;
+    background-size: 380px;
+}
+
+.description-text {
+    grid-area: desc-text;
+    padding: 0px 15.2%;
+    text-align: center;
+}
+
+.description-text__title {
+    max-width: 1000px;
+    font-size: 42px;
+    line-height: 56px;
+    font-weight: normal;
+}
+
+.description-text__subtitle {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.description__image1 {
+    grid-area: desc__img1;
+    align-self: end;
+}
+
+.description__image2 {
+    grid-area: desc__img2;
+    align-self: end;
+}
+
+.description__image3 {
+    grid-area: desc__img3;
+    align-self: end;
+}
+
+/* Section Description styles end */
