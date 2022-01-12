@@ -1,0 +1,62 @@
+body {
+    font-family: $font-family-default;
+    font-style: normal;
+    font-weight: $font-normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+h1 {
+    font-size: 3.5rem;
+    line-height: 80px;
+    font-weight: $font-bold;
+    letter-spacing: -0.9px;
+    color: $text-light-color;
+
+    @media (min-width: breakpoint-var(xxl)) {
+        font-size: 4.375rem;
+    }
+
+    @media (max-width: breakpoint-var(lg)) {
+        font-size: 2.375rem;
+    }
+
+    @media (max-width: breakpoint-var(md)) {
+        font-size: 2rem;
+    }
+
+    @media (max-width: breakpoint-var(sm)) {
+        font-size: 1.1rem;
+    }
+}
+
+
+h3 {
+    font-size: 3rem;
+    line-height: 56px;
+    color: $text-dark-color;
+    font-weight: $font-normal;
+
+    @media (min-width: breakpoint-var(xxl)) {
+        font-size: 3.5rem;
+    }
+
+    @media (max-width: breakpoint-var(lg)) {
+        font-size: 2.375rem;
+    }
+
+    @media (max-width: breakpoint-var(md)) {
+        font-size: 2rem;
+    }
+
+    @media (max-width: breakpoint-var(sm)) {
+        font-size: 1.1rem;
+    }
+}

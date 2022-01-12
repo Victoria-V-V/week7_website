@@ -1,0 +1,26 @@
+// colors
+// descriptive variables
+$color-main: #1A1A18;
+$color-accent: #545A2F;
+$color-light: #ffffff;
+$color-secondary: #63533E;
+$color-bright: #99A18E;
+
+//functional variables
+$text-dark-color: $color-main;
+$text-light-color: $color-light;
+// $button-text-light-color: $color-light;
+// $button-bg-color: $color-accent;
+
+// breakpoints
+$grid-breakpoints: (xs: 0,
+    xsm: 320px,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px);
+
+@function breakpoint-var($breakpoint) {
+    @return map-get($grid-breakpoints, $breakpoint);
+}

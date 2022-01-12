@@ -1,26 +1,25 @@
 /* Section scope styles start */
 
 .scope {
-    box-sizing: border-box;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 70px 140px 1fr 70px;
-    grid-template-areas:
-        "scope__tl scope__tl scope__tl"
-        "scope-project__hd scope-green__hd scope-landscaping__hd"
-        "scope-project__li scope-green__li scope-landscaping__li"
-        ". scope__bt .";
-    align-items: center;
-    justify-content: space-evenly;
-    column-gap: 50px;
-    row-gap: 10px;
-    height: 1060px;
-    max-height: 100vh;
-    padding: 0px 19%;
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 140px 1fr;
+        grid-template-areas:
+            "scope-project__hd scope-green__hd scope-landscaping__hd"
+            "scope-project__li scope-green__li scope-landscaping__li";
+        align-items: center;
+        justify-content: space-evenly;
+        column-gap: 50px;
+        row-gap: 10px;
+        // height: 1060px;
+        // max-height: 100vh;
+        padding: 0px 19%;
+    }
 }
 
 .scope__title {
-    grid-area: scope__tl;
     font-size: 42px;
     line-height: 56px;
     font-weight: normal;
@@ -78,10 +77,14 @@
     line-height: 31px;
 }
 
+
 .scope__button {
-    grid-area: scope__bt;
-    justify-self: center;
-    width: 50%;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.scope__button_1 {
     padding: 16px 28px;
     font-size: 20px;
     color: white;
