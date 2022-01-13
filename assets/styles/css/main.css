@@ -73,6 +73,36 @@ h1 {
   }
 }
 
+h2 {
+  font-size: 3.4rem;
+  color: #1A1A18;
+  font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+  h2 {
+    font-size: 3.0rem;
+  }
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 320px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
 h3 {
   font-size: 3rem;
   color: #1A1A18;
@@ -498,7 +528,7 @@ h3 {
 .scope {
   max-width: 1720px;
   margin: 0 auto;
-  padding: 2rem 15.2% 0 15.2%;
+  padding: 2rem 5.2% 0 5.2%;
 }
 
 .scope__container {
@@ -527,9 +557,6 @@ h3 {
 }
 
 .scope__title {
-  font-size: 42px;
-  line-height: 56px;
-  font-weight: normal;
   text-align: center;
 }
 
@@ -557,11 +584,12 @@ h3 {
   font-size: 30px;
 }
 
-.scope-project__list,
-.scope-green__list,
-.scope-landscaping__list {
-  font-size: 20px;
-  line-height: 31px;
+@media (max-width: 320px) {
+  .scope-project__head,
+  .scope-green__head,
+  .scope-landscaping__head {
+    font-size: 22px;
+  }
 }
 
 .scope__button {
