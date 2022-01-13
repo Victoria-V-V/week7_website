@@ -483,14 +483,14 @@ h3 {
   }
 }
 
-.visual img {
+.visual__item img {
   -ms-flex-item-align: start;
       -ms-grid-row-align: start;
       align-self: start;
 }
 
 @media (max-width: 768px) {
-  .visual img {
+  .visual__item img {
     max-width: 10%;
   }
 }

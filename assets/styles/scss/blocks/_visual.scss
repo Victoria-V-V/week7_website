@@ -58,12 +58,12 @@
             column-gap: 20px;
         }
     }
+}
 
-    & img {
-        align-self: start;
+.visual__item img {
+    align-self: start;
 
-        @media (max-width: breakpoint-var(md)) {
-            max-width: 10%;
-        }
+    @media (max-width: breakpoint-var(md)) {
+        max-width: 10%;
     }
 }
