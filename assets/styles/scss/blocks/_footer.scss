@@ -1,7 +1,6 @@
-/* Footer styles start */
+//todo тоже переписать
 
 .footer {
-    box-sizing: border-box;
     display: grid;
     grid-template-columns: 15.2% 1fr 15.2%;
     grid-template-rows: repeat(3, 1fr);
@@ -15,6 +14,10 @@
     padding: 0px 5.2% 0px 5.2%;
     background-color: #545A2F;
     color: white;
+
+    @media (max-width: breakpoint-var(lg)) {
+        grid-template-columns: 25.2% 1fr 25.2%;
+    }
 }
 
 .footer__number {
@@ -41,6 +44,10 @@
     display: flex;
     justify-content: center;
     width: 100%;
+
+    @media (max-width: breakpoint-var(sm)) {
+        display: none;
+    }
 }
 
 .footer__socials {
@@ -56,5 +63,3 @@
     font-size: 12px;
     line-height: 21px;
 }
-
-/* Footer styles end */
