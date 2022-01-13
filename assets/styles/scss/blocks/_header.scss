@@ -184,4 +184,8 @@
     @media (max-width: breakpoint-var(lg)) {
         max-width: 40%;
     }
+
+    @media (max-width: breakpoint-var(xsm)) {
+        display: none;
+    }
 }
