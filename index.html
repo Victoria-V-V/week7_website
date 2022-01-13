@@ -34,16 +34,34 @@
                 <a href="tel:+7(921)888888" class="header-contacts__number">+7 (921) 888 88 88</a>
                 <a href="tel:+7(921)888888" class="header-contacts__text">Бесплатная консультация</a>
             </div>
+
+            <!-- mobile nav -->
+            <label for="mobile__toggle" class="mobile__toggle-label">&#9776;</label>
+            <input type="checkbox" id="mobile__toggle" />
+
+            <nav class="mobile-nav">
+                <ul class="mobile-nav__list">
+                    <li><a class="header-nav__link" href="#description">Главная</a></li>
+                    <li><a class="header-nav__link" href="#">Портфолио</a></li>
+                    <li><a class="header-nav__link" href="#scope">Услуги</a></li>
+                    <li><a class="header-nav__link" href="#">Контакты</a></li>
+
+                    <li><a class="header-contacts__number" href="tel:+7(921)888888">+7 (921) 888 88 88</a></li>
+                    <li><a class="header-contacts__text" href="tel:+7(921)888888">Бесплатная консультация</a></li>
+                </ul>
+            </nav>
+            <!-- mobile nav end -->
+
         </div>
 
         <div class="header-text">
-            <span class="header-text__desc">Ландшафтная студия VESNA</span>
+            <span class="header-text__desc text-desc">Ландшафтная студия VESNA</span>
             <h1 class="header-text__title">Создаем авторские ландшафты <br> с вашим характером</h1>
-            <span class="header-text__subtitle">От идеи до полной реализации</span>
+            <h3 class="header-text__subtitle">От идеи до полной реализации</h3>
         </div>
 
         <div class="header-preview">
-            <p class="header-preview__text">
+            <p class="header-preview__text text-desc">
                 Последний <br> проект
             </p>
             <p class="header-preview__arrow">
@@ -54,8 +72,8 @@
             </a>
         </div>
 
-        <div class="header-image_bg_right">
-            <img src="/assets/images/header_bg_left.svg" alt="">
+        <div>
+            <img src="/assets/images/header_bg_left.svg" class="header-image_bg_right" alt="">
         </div>
 
     </header>
@@ -164,47 +182,57 @@
             <h2 class="scope__title">Что мы делаем</h2>
 
             <div class="scope__container">
-                <div class="scope-project__head">
-                    <img src="/assets/images/scope_icon_project.svg" alt="">
-                    Проектирование
+
+                <div class="scope-project">
+                    <div class="scope-project__head">
+                        <img src="/assets/images/scope_icon_project.svg" alt="">
+                        Проектирование
+                    </div>
+
+                    <ul class="scope-project__list">
+                        <li>Новый качественный подход к проектированию</li>
+                        <li>Детальная разработка всех инженерных разделов проекта</li>
+                        <li>Расчет освещенности участка</li>
+                        <li>Реализация идей любой сложности</li>
+                        <li>Европейский подход</li>
+                        <li>Применение нестандартных современных идей и технологий</li>
+                        <li>Точный расчет бюджетов строительства</li>
+                    </ul>
                 </div>
 
-                <ul class="scope-project__list">
-                    <li>Новый качественный подход к проектированию</li>
-                    <li>Детальная разработка всех инженерных разделов проекта</li>
-                    <li>Расчет освещенности участка</li>
-                    <li>Реализация идей любой сложности</li>
-                    <li>Европейский подход</li>
-                    <li>Применение нестандартных современных идей и технологий</li>
-                    <li>Точный расчет бюджетов строительства</li>
-                </ul>
 
-                <div class="scope-green__head">
-                    <img src="/assets/images/scope_icon_green.svg" alt="">
-                    Озеленение
+                <div class="scope-green">
+                    <div class="scope-green__head">
+                        <img src="/assets/images/scope_icon_green.svg" alt="">
+                        Озеленение
+                    </div>
+
+                    <ul class="scope-green__list">
+                        <li>Прямые поставки посадочного материала из лучших европейских питомников</li>
+                        <li>Использование новейших технологий при посадке</li>
+                        <li>Новый качественный подход к созданию пространств</li>
+                        <li>Европейские решения</li>
+                        <li>Длительная гарантия на все работы и посадочный материал</li>
+                        <li>Сервисное обслуживание</li>
+                    </ul>
                 </div>
 
-                <ul class="scope-green__list">
-                    <li>Прямые поставки посадочного материала из лучших европейских питомников</li>
-                    <li>Использование новейших технологий при посадке</li>
-                    <li>Новый качественный подход к созданию пространств</li>
-                    <li>Европейские решения</li>
-                    <li>Длительная гарантия на все работы и посадочный материал</li>
-                    <li>Сервисное обслуживание</li>
-                </ul>
+                <div class="scope-landscaping">
+                    <div class="scope-landscaping__head">
+                        <img src="/assets/images/scope_icon_landscaping.svg" alt="">
+                        Благоустройство
+                    </div>
 
-                <div class="scope-landscaping__head">
-                    <img src="/assets/images/scope_icon_landscaping.svg" alt="">
-                    Благоустройство
+                    <ul class="scope-landscaping__list">
+                        <li>Все виды строительно-монтажных работ по благоустройству</li>
+                        <li>Инновационные решения</li>
+                        <li>Длительная гарантия на все работы</li>
+                        <li>Строительство водоемов любой сложности</li>
+                        <li>Разработка индивидуальных малых архитектурных объектов</li>
+                    </ul>
                 </div>
 
-                <ul class="scope-landscaping__list">
-                    <li>Все виды строительно-монтажных работ по благоустройству</li>
-                    <li>Инновационные решения</li>
-                    <li>Длительная гарантия на все работы</li>
-                    <li>Строительство водоемов любой сложности</li>
-                    <li>Разработка индивидуальных малых архитектурных объектов</li>
-                </ul>
+
             </div>
 
             <div class="scope__button">
