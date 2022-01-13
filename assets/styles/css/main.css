@@ -383,14 +383,13 @@ h3 {
           justify-content: space-between;
   -ms-grid-columns: 30% 30% 30%;
       grid-template-columns: 30% 30% 30%;
-  padding: 5% 5.2% 0 5.2%;
+  padding: 0% 5.2% 0 5.2%;
 }
 
 @media (max-width: 576px) {
   .description__images {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    row-gap: 1%;
   }
 }
 
@@ -398,44 +397,60 @@ h3 {
   text-align: center;
   max-width: 1160px;
   margin: 0 auto;
-  padding: 0% 5.2% 0 5.2%;
+  padding: 0% 5.2% 5% 5.2%;
 }
 
-/* Section visual styles start */
 .visual {
-  min-height: 1000px;
-  padding: 0 19%;
+  margin-top: 5%;
   background: url(/assets/images/visual_bg.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 50%;
 }
 
+.visual-text__title {
+  text-align: center;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0% 5.2% 3% 5.2%;
+}
+
 .visual__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
   -webkit-column-gap: 50px;
           column-gap: 50px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0% 5.2% 3% 5.2%;
 }
 
 @media (max-width: 992px) {
   .visual__container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    row-gap: 5%;
   }
 }
 
 .visual__pic1 {
   max-width: 525px;
-  margin-left: -200px;
 }
 
 .visual__pic2 {
   margin-top: -50px;
-  max-width: 402px;
+  max-width: 502px;
+  margin-left: 200px;
+}
+
+@media (max-width: 576px) {
+  .visual__pic2 {
+    margin-top: -0px;
+    max-width: 502px;
+    margin-left: 0px;
+  }
 }
 
 .visual-list {
@@ -448,7 +463,6 @@ h3 {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 50%;
 }
 
 .visual__item {
@@ -459,17 +473,28 @@ h3 {
       align-self: start;
   -webkit-column-gap: 35px;
           column-gap: 35px;
-  font-size: 20px;
-  line-height: 31px;
+  line-height: 25px;
 }
 
-.visual__item img {
+@media (max-width: 768px) {
+  .visual__item {
+    -webkit-column-gap: 20px;
+            column-gap: 20px;
+  }
+}
+
+.visual img {
   -ms-flex-item-align: start;
       -ms-grid-row-align: start;
       align-self: start;
 }
 
-/* Section visual styles end */
+@media (max-width: 768px) {
+  .visual img {
+    max-width: 10%;
+  }
+}
+
 .scope {
   max-width: 1720px;
   margin: 0 auto;

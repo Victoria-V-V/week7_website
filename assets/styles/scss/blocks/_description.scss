@@ -14,11 +14,10 @@
         display: grid;
         justify-content: space-between;
         grid-template-columns: 30% 30% 30%;
-        padding: 5% 5.2% 0 5.2%;
+        padding: 0% 5.2% 0 5.2%;
 
         @media (max-width: breakpoint-var(sm)) {
             grid-template-columns: 1fr;
-            row-gap: 1%;
         }
     }
 
@@ -26,6 +25,6 @@
         text-align: center;
         max-width: 1160px;
         margin: 0 auto;
-        padding: 0% 5.2% 0 5.2%;
+        padding: 0% 5.2% 5% 5.2%;
     }
 }
